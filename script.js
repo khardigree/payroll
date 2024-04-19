@@ -16,7 +16,8 @@ const collectEmployees = function () {
       const firstName = prompt("First name:");
       const lastName = prompt("Last name:");
       let salary = prompt("Salary:");
-
+      
+// Code to make sure a valid input has been entered
       while (isNaN(salary) || salary.trim() === "") {
         alert("Please enter a valid salary.");
         salary = prompt("Enter employee's salary:");
